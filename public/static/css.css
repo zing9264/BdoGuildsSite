@@ -1,0 +1,19 @@
+body {
+    background-color: lightskyblue !important;
+}
+
+.hide{
+    display: none !important;
+}
+
+#questpage{
+    color: snow;
+    background-color: #343a40 !important;
+    border-top: solid 0.5px slategray;
+}
+
+#monsterpage{
+    color: snow;
+    background-color: #343a40 !important;
+    border-top: solid 0.5px slategray;
+}

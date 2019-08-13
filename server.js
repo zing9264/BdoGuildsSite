@@ -80,6 +80,10 @@ function onGetMain(req, res) {
 }
 app.get('/', onGetMain);
 
+function onGetQuestUpload(req, res) {
+    res.render('index');
+}
+app.get('/QuestUpload', onGetQuestUpload);
 
 async function onCreatNewDiary(req, res) {
     let date= new Date();
