@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>CS193x Final Project</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <script src="/js/app.js" defer></script>
+    <script src="/js/DiaryScreen.js" defer></script>
+    <script src="/js/HomeScreen.js" defer></script>
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+<!-- TODO(you): Add the HTML necessary to complete your final project. -->
+<header>
+    <div class="home inactive">Creating a new journal
+        <button class="creatbtn">CREATE A NEW JOURNAL</button>
+        <button class="loadbtn">LOAD AN OLD JOURNAL</button>
+        <br>
+        <div id="savedDiary" class="inactive">
+        </div>
+    </div>
+
+</header>
+
+<div class="display-journal ">
+    <main>
+        <div class="date">
+           {{date-view}}
+        </div>
+        <div class="title">
+            {{title-view}}
+        </div>
+        <form class="context" method="post">
+            <textarea id="styled" class="textarea" onfocus="setbg('#e5fff3');settextarea(1); " onblur="setbg('white');settextarea(0);app.diaryScreen._postdata()" style="background: white;">{{Content}}</textarea>
+        </form>
+    </main>
+    <footer>
+        <div class="UIbar default">
+            <button class="btn back"><<</button>
+            <button class="btn today">GO Today</button>
+            <button class="btn forward">>></button>
+        </div>
+    </footer>
+</div>
+
+
+
+</body>
+</html>
